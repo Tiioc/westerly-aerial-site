@@ -36,9 +36,19 @@ export function EmailCapture() {
             You&rsquo;re on the list — talk soon.
           </p>
         ) : (
-          <form onSubmit={handleSubmit} className="flex w-full max-w-md flex-col gap-3 sm:flex-row">
-            {/* Tags the submission so list signups are distinct from booking enquiries in Formspree */}
+          <form
+            name="westerly-email-list"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className="flex w-full max-w-md flex-col gap-3 sm:flex-row"
+          >
+            <input type="hidden" name="form-name" value="westerly-email-list" />
             <input type="hidden" name="_intent" value="email-list" />
+            <p className="hidden">
+              <label>Don&rsquo;t fill this out: <input name="bot-field" /></label>
+            </p>
             <label htmlFor="capture-email" className="sr-only">Email address</label>
             <input
               id="capture-email"

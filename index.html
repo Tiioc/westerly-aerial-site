@@ -130,6 +130,26 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- =====================================================================
+         NETLIFY FORMS — hidden static forms detected at build time.
+         Don't remove. Submissions arrive in Netlify → Site → Forms.
+         To get emails, configure a Form notification in the Netlify dashboard.
+    ====================================================================== -->
+    <form name="westerly-contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <input name="business" />
+      <input name="venue-type" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="westerly-email-list" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="email" type="email" />
+      <input name="_intent" />
+    </form>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

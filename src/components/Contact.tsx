@@ -36,7 +36,19 @@ function ContactForm() {
   }
 
   return (
-    <form className="space-y-5 bg-[var(--fog)] p-8 md:p-10" onSubmit={handleSubmit}>
+    <form
+      name="westerly-contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      className="space-y-5 bg-[var(--fog)] p-8 md:p-10"
+      onSubmit={handleSubmit}
+    >
+      {/* Netlify needs these to route submissions to the right named form. */}
+      <input type="hidden" name="form-name" value="westerly-contact" />
+      <p className="hidden">
+        <label>Don&rsquo;t fill this out: <input name="bot-field" /></label>
+      </p>
       <p className="mb-1 text-[15px] leading-relaxed text-[rgba(20,32,31,0.82)]">
         Tell me about your venue and I&rsquo;ll send a quick plan + quote, usually within one
         business day.
