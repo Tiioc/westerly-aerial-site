@@ -1,0 +1,17 @@
+{
+  "name": "Westerly Aerial Co.",
+  "short_name": "Westerly",
+  "description": "Aerial photography and video marketing for the Treasure Valley's golf courses, clubs, resorts, and event venues.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B2A33",
+  "theme_color": "#1B2A33",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}

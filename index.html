@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1B2A33" />
+
+    <title>Westerly Aerial Co. — Aerial Marketing for the Treasure Valley</title>
+    <meta
+      name="description"
+      content="Aerial photography and video marketing for the Treasure Valley's golf courses, clubs, resorts, and event venues. Based in Garden City / Boise, Idaho. FAA Part 107 certified, fully insured, 48-hour delivery."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Westerly Aerial Co." />
+
+    <!-- TODO ON DEPLOY: change every "westerlyaerial.com" below to your real domain -->
+    <link rel="canonical" href="https://westerlyaerial.com/" />
+
+    <!-- Icons & PWA manifest (files live in /public) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts: preconnect for speed, load with display=swap (no invisible text on load) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Open Graph (Facebook, LinkedIn, iMessage link previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Westerly Aerial Co." />
+    <meta
+      property="og:title"
+      content="Westerly Aerial Co. — Aerial Marketing for the Treasure Valley"
+    />
+    <meta
+      property="og:description"
+      content="Aerial photography and video marketing for the Treasure Valley's golf courses, clubs, resorts, and event venues."
+    />
+    <meta property="og:url" content="https://westerlyaerial.com/" />
+    <!-- TODO ON DEPLOY: add a 1200×630 share image at /public/og.jpg -->
+    <meta property="og:image" content="https://westerlyaerial.com/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Westerly Aerial Co. — Aerial Marketing for the Treasure Valley"
+    />
+    <meta
+      name="twitter:description"
+      content="Aerial photography and video marketing for the Treasure Valley's golf courses, clubs, resorts, and event venues."
+    />
+    <meta name="twitter:image" content="https://westerlyaerial.com/og.jpg" />
+
+    <!-- Structured data: ProfessionalService for local SEO / Google Business knowledge panel -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://westerlyaerial.com/#business",
+        "name": "Westerly Aerial Co.",
+        "description": "Aerial photography and video marketing for the Treasure Valley's golf courses, clubs, resorts, and event venues.",
+        "url": "https://westerlyaerial.com/",
+        "telephone": "+1-208-555-0148",
+        "email": "hello@westerlyaerial.com",
+        "image": "https://westerlyaerial.com/og.jpg",
+        "logo": "https://westerlyaerial.com/favicon.svg",
+        "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "sameAs": ["https://instagram.com/westerlyaerial"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Garden City",
+          "addressRegion": "ID",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Garden City, Idaho" },
+          { "@type": "City", "name": "Boise, Idaho" },
+          { "@type": "City", "name": "Meridian, Idaho" },
+          { "@type": "City", "name": "Eagle, Idaho" },
+          { "@type": "City", "name": "Nampa, Idaho" },
+          { "@type": "City", "name": "McCall, Idaho" },
+          { "@type": "City", "name": "Sun Valley, Idaho" },
+          { "@type": "Place", "name": "Treasure Valley, Idaho" }
+        ],
+        "knowsAbout": [
+          "Aerial photography Boise",
+          "Drone photography Garden City",
+          "Golf course aerial video Idaho",
+          "Treasure Valley aerial marketing",
+          "Resort and hospitality marketing",
+          "Real estate aerial photography"
+        ],
+        "hasCredential": "FAA Part 107 Remote Pilot Certificate"
+      }
+    </script>
+
+    <!-- =====================================================================
+         GOOGLE ANALYTICS 4  (LAUNCH.md, step 6)
+         1. Create a free GA4 property at https://analytics.google.com
+         2. Copy your Measurement ID (looks like G-XXXXXXXXXX)
+         3. Replace BOTH occurrences of G-XXXXXXXXXX below, then uncomment.
+    ====================================================================== -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
+    <!-- =====================================================================
+         META (FACEBOOK/INSTAGRAM) PIXEL — optional, add later if you run ads
+         Paste your Pixel base code here and replace YOUR_PIXEL_ID.
+    ====================================================================== -->
+    <!--
+    <script>
+      !function(f,b,e,v,n,t,s){...}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

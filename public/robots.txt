@@ -1,0 +1,7 @@
+# Westerly Aerial Co.
+# Allow all crawlers full access.
+User-agent: *
+Allow: /
+
+# TODO ON DEPLOY: change to your real domain.
+Sitemap: https://westerlyaerial.com/sitemap.xml
