@@ -6,8 +6,8 @@
 // ── CONTACT DETAILS (swap for your real domain email / line / handle) ──
 export const CONTACT = {
   email: 'hello@westerlyaerial.com',
-  phoneDisplay: '(208) 555-0148',
-  phoneHref: 'tel:+12085550148',
+  phoneDisplay: '(208) 555-0100',
+  phoneHref: 'tel:+12085550100',
   instagram: 'https://instagram.com/westerlyaerial',
   instagramHandle: '@westerlyaerial',
 }
