@@ -114,9 +114,9 @@ export function About() {
           <div className="founder-frame overflow-hidden rounded-sm">
             <MediaSlot
               id="founder"
-              src="/tyler-yosemite.jpg.jpeg"
+              src="/tyler-yosemite-armscrossed.jpeg"
               type="image"
-              alt="Tyler Bunn, Westerly Aerial founder, on location in the mountains at golden hour."
+              alt="Tyler Bunn, founder of Westerly Aerial Co."
               aspect="3 / 4"
               fallback={<FounderPortraitFallback />}
               className="bg-[var(--deep-slate)]"
@@ -124,9 +124,6 @@ export function About() {
           </div>
           <p className="mt-3 text-[13px] uppercase tracking-[0.14em] text-[rgba(232,228,220,0.7)]">
             Tyler Bunn · Founder · Garden City, ID
-          </p>
-          <p className="mt-1 font-display text-[13px] italic text-[rgba(217,138,95,0.7)]">
-            On location, golden hour
           </p>
         </div>
       </div>

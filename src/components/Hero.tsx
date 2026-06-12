@@ -27,10 +27,9 @@ export function Hero() {
       >
         <MediaSlot
           id="hero"
-          // src=""           // <-- drop a video or image src here
-          // type="video"
-          // poster=""
-          alt="Aerial dusk view of a Treasure Valley golf course at golden hour"
+          src="/hero-reel.mp4"
+          type="video"
+          alt="Aerial flyover of an Idaho lake"
           fallback={<HeroFallback />}
           overlay
           priority
