@@ -102,11 +102,10 @@ export const ABOUT_BRAND_FRAME =
 
 // First-person founder note (Tyler). Keep it plain and real.
 export const FOUNDER_NOTE = [
-  "Hey, I'm Tyler. I'm the one who flies the drone, shoots everything, and edits it — it's just me.",
-  "I'm 21 and I go to Boise State. I grew up in California and moved out here, and honestly I just think the Treasure Valley is ridiculous how good it looks — and almost nobody's filming it from the air the way they should be. So I started doing it.",
-  "I'm picky about one thing especially: shooting at the right time of day. Same course can look flat at noon and unreal an hour before sunset, and I'd rather wait for the good light than hand you something average.",
-  "Since it's just me, you're not getting passed around. You talk to me, I show up, I shoot it, I edit it, you get it back from me. That's the whole company right now.",
-  "And look — I'm new. Not going to act like I've been doing this for ten years. But I'll outwork that. For the few hours I'm filming your place, it's the only place that matters to me.",
+  "Hey, I'm Tyler. I'm the pilot, cinematographer, and editor behind every project. From flight planning to final delivery, I handle it all.",
+  "I'm a Boise State student who grew up in California and relocated to Idaho. The Treasure Valley is one of the most photogenic regions I've ever seen, and very few people are capturing it from the air the way it deserves. That's where I come in.",
+  "I'm particular about lighting. The same property can look completely different depending on the time of day, and I always shoot during the window that makes it look its best. I don't deliver anything I wouldn't be proud to put my name on.",
+  "Because I run this personally, you work directly with me from start to finish. No handoffs, no middlemen. You reach out, I show up, I shoot, I edit, and I deliver.",
 ]
 
 export const ABOUT_LICENSING_LINE =
