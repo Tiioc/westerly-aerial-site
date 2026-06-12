@@ -45,7 +45,7 @@ export function Navbar() {
             </a>
           ))}
           <a href="#contact" className="cta-tide rounded-sm px-4 py-2 text-[13px] font-medium uppercase tracking-[0.14em]">
-            Book a Discovery Flight
+            Apply for a Discovery Flight
           </a>
         </div>
 
@@ -76,7 +76,7 @@ export function Navbar() {
             onClick={() => setOpen(false)}
             className="cta-tide mt-4 inline-block rounded-sm px-4 py-3 text-center text-[13px] font-medium uppercase tracking-[0.14em]"
           >
-            Book a Discovery Flight
+            Apply for a Discovery Flight
           </a>
         </div>
       )}

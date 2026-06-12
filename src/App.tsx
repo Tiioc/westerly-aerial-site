@@ -13,12 +13,12 @@
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { Pov } from './components/Pov'
+import { DiscoveryCta } from './components/DiscoveryCta'
 import { Services } from './components/Services'
 import { FlightAccent } from './components/FlightAccent'
 import { WhatWeCapture } from './components/WhatWeCapture'
-import { DiscoveryCta } from './components/DiscoveryCta'
-import { Testimonial } from './components/Testimonial'
 import { About } from './components/About'
+import { Pricing } from './components/Pricing'
 import { FAQ } from './components/FAQ'
 import { Contact } from './components/Contact'
 import { EmailCapture } from './components/EmailCapture'
@@ -32,12 +32,13 @@ export default function App() {
       <main>
         <Hero />
         <Pov />
+        {/* Discovery Flight offer moved up — directly under the empathy line */}
+        <DiscoveryCta />
         <Services />
         <FlightAccent />
         <WhatWeCapture />
-        <DiscoveryCta />
-        <Testimonial />
         <About />
+        <Pricing />
         <FAQ />
         <Contact />
         <EmailCapture />

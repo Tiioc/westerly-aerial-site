@@ -105,7 +105,7 @@ export function Contact() {
         <div className="order-1 md:order-2">
           <span className="eyebrow text-[var(--sunset)]">Contact</span>
           <h2 className="font-display mt-4 text-[40px] font-medium leading-[1.05] text-[var(--fog)] md:text-[52px]">
-            Book a Discovery
+            Apply for a Discovery
             <br />
             <span className="italic" style={{ color: 'var(--sunset)' }}>Flight.</span>
           </h2>

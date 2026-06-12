@@ -44,7 +44,7 @@ export function StickyMobileCta() {
         href="#contact"
         className="cta-tide flex items-center justify-center rounded-sm py-4 text-[14px] font-semibold uppercase tracking-[0.14em] shadow-[0_-6px_24px_rgba(11,18,24,0.45)]"
       >
-        Book a Free Discovery Flight
+        Apply for a Free Discovery Flight
       </a>
     </div>
   )

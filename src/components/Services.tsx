@@ -16,18 +16,20 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           {service.title}
         </h3>
         <p className="mt-4 text-[16px] leading-relaxed text-[rgba(20,32,31,0.82)]">{service.body}</p>
-        <ul className="mt-9 space-y-4 border-t border-[var(--sand)] pt-6">
+        <ul className="mt-9 space-y-5 border-t border-[var(--sand)] pt-6">
           {service.packages.map((pkg) => (
-            <li key={pkg.name} className="text-[15px]">
-              {pkg.tag && (
-                <span className="mb-1 inline-block rounded-sm bg-[rgba(217,138,95,0.15)] px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9c5530]">
-                  {pkg.tag}
-                </span>
-              )}
-              <span className="flex items-baseline justify-between gap-3">
-                <span className="text-[var(--ink)]">{pkg.name}</span>
-                <span className="font-display whitespace-nowrap text-[var(--tide-text)]">{pkg.price}</span>
-              </span>
+            <li
+              key={pkg.name}
+              className={
+                pkg.lead
+                  ? 'rounded-sm bg-[rgba(217,138,95,0.12)] px-3 py-2.5'
+                  : ''
+              }
+            >
+              <p className={`text-[15px] font-medium ${pkg.lead ? 'text-[#9c5530]' : 'text-[var(--ink)]'}`}>
+                {pkg.name}
+              </p>
+              <p className="mt-0.5 text-[14px] leading-snug text-[rgba(20,32,31,0.7)]">{pkg.note}</p>
             </li>
           ))}
         </ul>

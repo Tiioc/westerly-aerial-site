@@ -63,13 +63,13 @@ export function WhatWeCapture() {
     <section id="work" className="scroll-mt-24 bg-[var(--deep-slate)] px-6 py-28 md:px-10 md:py-36">
       <div className="mx-auto max-w-[1280px]">
         <div ref={headRef} className="tile-rise max-w-2xl">
-          <span className="eyebrow text-[var(--sunset)]">Our Lens</span>
+          <span className="eyebrow text-[var(--sunset)]">My Lens</span>
           <h2 className="font-display mt-4 text-[40px] font-medium leading-[1.05] text-[var(--fog)] md:text-[52px]">
-            What we capture.
+            What I capture.
           </h2>
           <p className="mt-5 text-[rgba(232,228,220,0.78)]">
             Westerly is just taking flight in the Treasure Valley. Here&rsquo;s the work
-            we&rsquo;re built for — and the light we chase. Pilot reels available on request.
+            I&rsquo;m built for — and the light I chase. Pilot reels available on request.
           </p>
         </div>
 
@@ -90,8 +90,8 @@ export function WhatWeCapture() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-[14px] italic leading-relaxed text-[rgba(232,228,220,0.78)]">
-          These illustrate the work Westerly is built for. Real aerial samples are available on
-          request, and this gallery fills with original footage as we fly.
+          These illustrate the kind of work I&rsquo;m built for. Real aerial samples are available
+          on request, and this gallery fills with my own footage as I fly.
         </p>
 
         <div className="mt-6 text-center">
@@ -99,7 +99,7 @@ export function WhatWeCapture() {
             href="#contact"
             className="font-display text-[17px] italic text-[var(--sunset)] underline decoration-[rgba(217,138,95,0.5)] decoration-1 underline-offset-[6px] transition-colors hover:text-[var(--fog)] hover:decoration-[rgba(232,228,220,0.6)]"
           >
-            Be one of our first Discovery Flights →
+            Apply for a Discovery Flight →
           </a>
         </div>
       </div>

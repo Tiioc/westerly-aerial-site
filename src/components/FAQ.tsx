@@ -40,9 +40,8 @@ export function FAQ() {
             href="#contact"
             className="font-medium text-[var(--tide-text)] underline decoration-[var(--tide-text)] decoration-1 underline-offset-[5px] transition-colors hover:text-[#9c5530] hover:decoration-[#9c5530]"
           >
-            Ask in the form
+            Ask me below &rarr;
           </a>
-          .
         </p>
       </div>
     </section>

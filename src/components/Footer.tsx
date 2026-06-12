@@ -36,7 +36,7 @@ export function Footer() {
         </nav>
         <div className="flex flex-col items-center gap-3 text-center md:items-end md:text-right">
           <p className="text-[12px] tracking-wide text-[rgba(232,228,220,0.78)]">
-            FAA Part 107 Certified · Garden City, Idaho · © 2026
+            Licensed &amp; insured at launch · Garden City, Idaho · © 2026
           </p>
           <a
             href="#top"

@@ -12,6 +12,9 @@ export function DiscoveryCta() {
           The Discovery Flight is a free first shoot — a few edited hero stills and a social-ready
           clip, delivered fast, no commitment. Limited spots.
         </p>
+        <p className="mx-auto mt-4 max-w-xl text-[15px] italic leading-relaxed text-[rgba(20,32,31,0.7)]">
+          The first venues to apply get the first reel — and the first words — on this page.
+        </p>
         <a
           href="#contact"
           className="cta-tide cta-tide-pulse mt-10 inline-flex items-center rounded-sm px-8 py-4 text-[14px] font-medium uppercase tracking-[0.14em]"

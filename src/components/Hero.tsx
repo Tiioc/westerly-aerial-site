@@ -70,18 +70,19 @@ export function Hero() {
             Aerial marketing photography and video for the Treasure Valley&rsquo;s golf courses,
             clubs, resorts, and event venues.
           </p>
-          <div className="mt-9 flex flex-wrap gap-4">
+          <div className="mt-9 flex flex-col items-start gap-4">
             <a
               href="#contact"
               className="cta-tide cta-tide-pulse inline-flex items-center rounded-sm px-7 py-3.5 text-[14px] font-medium uppercase tracking-[0.14em]"
             >
-              Book a Discovery Flight
+              Apply for a Discovery Flight
             </a>
             <a
               href="#work"
-              className="ghost-link inline-flex items-center rounded-sm px-7 py-3.5 text-[14px] font-medium uppercase tracking-[0.14em]"
+              className="group inline-flex items-center gap-1.5 text-[13px] font-medium uppercase tracking-[0.14em] text-[rgba(232,228,220,0.78)] underline decoration-[rgba(232,228,220,0.3)] decoration-1 underline-offset-[6px] transition-colors hover:text-[var(--sunset)] hover:decoration-[var(--sunset)]"
             >
               See the work
+              <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
             </a>
           </div>
           <p className="mt-7 max-w-xl text-[13px] leading-relaxed text-[rgba(232,228,220,0.78)]">

@@ -12,73 +12,108 @@ export const CONTACT = {
   instagramHandle: '@westerlyaerial',
 }
 
-// Credential trust line shown beside the primary CTAs.
+// Short trust line shown beside the primary CTAs (pre-launch honest framing).
 export const TRUST_LINE =
-  'FAA Part 107 Certified · Fully Insured · 48-Hour Delivery · Locally owned in Garden City'
+  'Launching soon in the Treasure Valley · 48-Hour Delivery · Locally owned in Garden City'
 
 export const NAV_LINKS = [
   { label: 'Work', href: '#work' },
   { label: 'Services', href: '#services' },
   { label: 'About', href: '#about' },
+  { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ]
 
+// ── SERVICES OVERVIEW GRID (no prices here — numbers live in PRICING) ──
+export type ServicePackage = { name: string; note: string; lead?: boolean }
 export type Service = {
   title: string
   body: string
-  packages: { name: string; price: string; tag?: string }[]
+  packages: ServicePackage[]
   featured?: boolean
 }
 
 export const SERVICES: Service[] = [
   {
     title: 'Venue Marketing',
-    body: 'Cinematic aerials, social-ready vertical cuts, and seasonal retainers built for courses, clubs, resorts, and event venues that need their place felt — not just shown.',
+    body: 'Cinematic aerials and social-ready vertical cuts for courses, clubs, resorts, and event venues that need their place felt — not just shown.',
     packages: [
-      { name: 'Discovery Flight', price: 'Free (by application)' },
-      { name: 'Venue Refresh', price: 'from $650' },
-      { name: 'Seasonal Retainer', price: 'from $400/mo', tag: 'Best value' },
+      { name: 'Discovery Flight', note: 'Free · by application', lead: true },
+      { name: 'Venue Refresh', note: 'A full cinematic refresh of your place' },
+      { name: 'Seasonal Retainer', note: 'Fresh aerials every season, on a simple monthly' },
     ],
     featured: true,
   },
   {
     title: 'Property Aerials',
-    body: "Aerials that make a property's land, light, and setting impossible to ignore. MLS-compliant, 48-hour delivery, licensed clean.",
+    body: "Aerials that make a property's land, setting, and views impossible to ignore. MLS-compliant, 48-hour delivery, licensed clean.",
     packages: [
-      { name: 'Listing Package', price: 'from $200' },
-      { name: 'Premium / Acreage', price: 'from $400' },
-      { name: 'Add-on to Ground Shoot', price: 'from $100' },
+      { name: 'Listing Package', note: 'Aerials that make the listing impossible to scroll past' },
+      { name: 'Premium / Acreage', note: 'For larger land, light, and setting' },
+      { name: 'Add-on to Ground Shoot', note: 'Aerials layered onto an existing shoot' },
     ],
   },
   {
     title: 'Events & Competition',
     body: 'Tournament promos, competition coverage, and sponsor content — built to make next year sell itself.',
     packages: [
+      { name: 'Promo / B-Roll', note: 'Tournament and event promos that sell next year' },
+      { name: 'Full Competition Coverage', note: 'Full-day competition + sponsor content' },
+    ],
+  },
+]
+
+// ── PRICING (the only place with dollar figures) ──
+export type PriceGroup = { category: string; items: { name: string; price: string }[] }
+
+export const PRICING: PriceGroup[] = [
+  {
+    category: 'Venue Marketing',
+    items: [
+      { name: 'Discovery Flight', price: 'Free (by application)' },
+      { name: 'Venue Refresh', price: 'from $650' },
+      { name: 'Seasonal Retainer', price: 'from $400/mo' },
+    ],
+  },
+  {
+    category: 'Property Aerials',
+    items: [
+      { name: 'Listing Package', price: 'from $200' },
+      { name: 'Premium / Acreage', price: 'from $400' },
+      { name: 'Add-on to Ground Shoot', price: 'from $100' },
+    ],
+  },
+  {
+    category: 'Events & Competition',
+    items: [
       { name: 'Promo / B-Roll', price: 'from $500' },
       { name: 'Full Competition Coverage', price: 'from $1,200' },
     ],
   },
 ]
 
-export const ABOUT_LINES = [
-  'Westerly Aerial Co. is an aerial photography and video studio based in Garden City, in the heart of the Treasure Valley — with an eye for soft light, clean lines, and the calm that makes a place feel like somewhere you want to be.',
-  'Every shoot chases the same thing — capturing how good a place actually feels from above.',
-  'FAA Part 107 certified, fully insured, 48-hour delivery, clean licensing — always.',
+export const PRICING_FOOTER =
+  'Every paid shoot will be licensed, insured, and clean-licensed. Always.'
+
+// ── ABOUT / FOUNDER ──
+export const ABOUT_BRAND_FRAME =
+  'Westerly Aerial Co. is an aerial photography and video studio in Garden City, in the heart of the Treasure Valley.'
+
+// First-person founder note (Tyler). Keep it plain and real.
+export const FOUNDER_NOTE = [
+  "Hey, I'm Tyler. I'm the one who flies the drone, shoots everything, and edits it — it's just me.",
+  "I'm 21 and I go to Boise State. I grew up in California and moved out here, and honestly I just think the Treasure Valley is ridiculous how good it looks — and almost nobody's filming it from the air the way they should be. So I started doing it.",
+  "I'm picky about one thing especially: shooting at the right time of day. Same course can look flat at noon and unreal an hour before sunset, and I'd rather wait for the good light than hand you something average.",
+  "Since it's just me, you're not getting passed around. You talk to me, I show up, I shoot it, I edit it, you get it back from me. That's the whole company right now.",
+  "And look — I'm new. Not going to act like I've been doing this for ten years. But I'll outwork that. For the few hours I'm filming your place, it's the only place that matters to me.",
 ]
 
-export const TRUST_BADGES = ['FAA Part 107', 'Fully Insured', '48h Delivery', 'Clean Licensing']
+export const ABOUT_LICENSING_LINE =
+  'Part 107 licensed and insured by launch — 48-hour delivery and clean licensing as standard, always.'
 
-// TO ADD A REAL TESTIMONIAL: fill in these values.
-//   - quote: keep it tight (1–2 sentences max)
-//   - attribution: "Name, Title · Venue"
-//   - venueType: optional one-word category shown as a small eyebrow
-// When `quote` is empty, the section shows an honest placeholder instead.
-export const TESTIMONIAL: { quote: string; attribution: string; venueType?: string } = {
-  quote: '',
-  attribution: '',
-  venueType: '',
-}
+// Pre-launch trust badges (no present-tense cert/insurance claims).
+export const TRUST_BADGES = ['Licensed at launch', 'Insured at launch', '48h Delivery', 'Clean Licensing']
 
 export const FAQS: { q: string; a: string }[] = [
   {
@@ -95,15 +130,15 @@ export const FAQS: { q: string; a: string }[] = [
   },
   {
     q: 'Are you licensed and insured?',
-    a: 'Yes — FAA Part 107 certified pilot and $1M aviation liability insurance, with certificates of insurance available on request for venues that require one on file.',
+    a: "Not yet — and I'm not going to pretend otherwise. I'm completing my FAA Part 107 certification and getting insured before I take on any paid work. Every paid shoot will be fully licensed and insured, always. Want in early? Apply for a Discovery Flight and you'll be first in line when I launch.",
   },
   {
     q: 'What if the weather doesn’t cooperate?',
-    a: 'We watch the forecast together and reschedule before a bad-light flight. There’s no charge for a weather move, and Discovery Flights stay on the books until the light is right.',
+    a: 'I keep an eye on the forecast and I’ll move the date before a bad-light flight. There’s no charge for a weather reschedule, and Discovery Flights stay on the books until the light is right.',
   },
   {
     q: 'What if I don’t love the footage?',
-    a: 'The Discovery Flight is free — if it’s not a fit, you keep the deliverables and there’s no obligation to book again. On paid shoots, we revise the edit until the deliverables work for your venue.',
+    a: 'The Discovery Flight is free — if it’s not a fit, you keep the deliverables and there’s no obligation to book again. On paid shoots, I’ll revise the edit until it works for your venue.',
   },
 ]
 
