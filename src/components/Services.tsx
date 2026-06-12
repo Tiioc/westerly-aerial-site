@@ -49,7 +49,7 @@ export function Services() {
             Three ways to put your place on screen.
           </h2>
           <p className="mt-5 text-[rgba(20,32,31,0.82)]">
-            Built around what each market actually needs — outcomes first, specs last.
+            Built around what each market actually needs. Outcomes first, specs last.
           </p>
         </div>
 

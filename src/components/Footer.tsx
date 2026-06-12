@@ -1,12 +1,14 @@
 import { ArrowUp } from 'lucide-react'
 import { NAV_LINKS, CONTACT } from '@/lib/content'
+import { LogoMark } from './Logo'
 
 export function Footer() {
   return (
     <footer className="border-t border-[rgba(201,184,154,0.3)] px-6 py-10 md:px-10" style={{ backgroundColor: 'var(--deep-slate)' }}>
       <div className="mx-auto flex max-w-[1280px] flex-col items-center gap-6 md:flex-row md:justify-between">
         <div className="flex items-center gap-5">
-          <a href="#top" className="font-display text-[15px] font-medium text-[var(--fog)]">
+          <a href="#top" className="flex items-center gap-2.5 font-display text-[15px] font-medium text-[var(--fog)]">
+            <LogoMark className="h-6 w-6" />
             Westerly Aerial Co.
           </a>
           <a

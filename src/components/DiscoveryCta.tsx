@@ -9,11 +9,11 @@ export function DiscoveryCta() {
           See what your venue looks like from up here.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-[17px] leading-relaxed text-[rgba(20,32,31,0.82)]">
-          The Discovery Flight is a free first shoot — a few edited hero stills and a social-ready
+          The Discovery Flight is a free first shoot: a few edited hero stills and a social-ready
           clip, delivered fast, no commitment. Limited spots.
         </p>
         <p className="mx-auto mt-4 max-w-xl text-[15px] italic leading-relaxed text-[rgba(20,32,31,0.7)]">
-          The first venues to apply get the first reel — and the first words — on this page.
+          The first venues to apply get the first reel, and the first words, on this page.
         </p>
         <a
           href="#contact"

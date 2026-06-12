@@ -37,7 +37,7 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     title: 'Venue Marketing',
-    body: 'Cinematic aerials and social-ready vertical cuts for courses, clubs, resorts, and event venues that need their place felt — not just shown.',
+    body: 'Cinematic aerials and social-ready vertical cuts for courses, clubs, resorts, and event venues that need their place felt, not just shown.',
     packages: [
       { name: 'Discovery Flight', note: 'Free · by application', lead: true },
       { name: 'Venue Refresh', note: 'A full cinematic refresh of your place' },
@@ -56,7 +56,7 @@ export const SERVICES: Service[] = [
   },
   {
     title: 'Events & Competition',
-    body: 'Tournament promos, competition coverage, and sponsor content — built to make next year sell itself.',
+    body: 'Tournament promos, competition coverage, and sponsor content, built to make next year sell itself.',
     packages: [
       { name: 'Promo / B-Roll', note: 'Tournament and event promos that sell next year' },
       { name: 'Full Competition Coverage', note: 'Full-day competition + sponsor content' },
@@ -109,7 +109,7 @@ export const FOUNDER_NOTE = [
 ]
 
 export const ABOUT_LICENSING_LINE =
-  'Part 107 licensed and insured by launch — 48-hour delivery and clean licensing as standard, always.'
+  'Part 107 licensed and insured by launch. 48-hour delivery and clean licensing as standard, always.'
 
 // Pre-launch trust badges (no present-tense cert/insurance claims).
 export const TRUST_BADGES = ['Licensed at launch', 'Insured at launch', '48h Delivery', 'Clean Licensing']
@@ -117,27 +117,27 @@ export const TRUST_BADGES = ['Licensed at launch', 'Insured at launch', '48h Del
 export const FAQS: { q: string; a: string }[] = [
   {
     q: 'How soon can you shoot?',
-    a: 'Most Treasure Valley shoots happen within one to two weeks of booking, weather permitting. Discovery Flights are scheduled within seven days when there’s an opening.',
+    a: "Most Treasure Valley shoots happen within one to two weeks of booking, weather permitting. Discovery Flights are scheduled within seven days when there’s an opening.",
   },
   {
-    q: 'What’s included in a shoot?',
+    q: "What’s included in a shoot?",
     a: 'Every package includes the flight, edited deliverables (stills and a social-ready vertical clip on most tiers), color-corrected exports in the formats you need, and clean written usage licensing. Footage is in your inbox within 48 hours of the flight.',
   },
   {
     q: 'How does licensing work?',
-    a: 'You get unrestricted commercial use of the deliverables for the venue or property in the agreement — web, social, print, paid ads, signage. Licensing terms are written into every contract, so there’s never any guessing later.',
+    a: "You get unrestricted commercial use of the deliverables for the venue or property in the agreement: web, social, print, paid ads, signage. Licensing terms are written into every contract, so there is never any guessing later.",
   },
   {
     q: 'Are you licensed and insured?',
-    a: "Not yet — and I'm not going to pretend otherwise. I'm completing my FAA Part 107 certification and getting insured before I take on any paid work. Every paid shoot will be fully licensed and insured, always. Want in early? Apply for a Discovery Flight and you'll be first in line when I launch.",
+    a: "Not yet, and I'm not going to pretend otherwise. I'm completing my FAA Part 107 certification and getting insured before I take on any paid work. Every paid shoot will be fully licensed and insured, always. Want in early? Apply for a Discovery Flight and you'll be first in line when I launch.",
   },
   {
-    q: 'What if the weather doesn’t cooperate?',
-    a: 'I keep an eye on the forecast and I’ll move the date before a bad-light flight. There’s no charge for a weather reschedule, and Discovery Flights stay on the books until the light is right.',
+    q: "What if the weather doesn’t cooperate?",
+    a: "I keep an eye on the forecast and I’ll move the date before a bad-light flight. There’s no charge for a weather reschedule, and Discovery Flights stay on the books until the light is right.",
   },
   {
-    q: 'What if I don’t love the footage?',
-    a: 'The Discovery Flight is free — if it’s not a fit, you keep the deliverables and there’s no obligation to book again. On paid shoots, I’ll revise the edit until it works for your venue.',
+    q: "What if I don’t love the footage?",
+    a: "The Discovery Flight is free. If it is not a fit, you keep the deliverables and there is no obligation to book again. On paid shoots, I will revise the edit until it works for your venue.",
   },
 ]
 

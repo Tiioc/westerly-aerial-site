@@ -69,7 +69,7 @@ export function WhatWeCapture() {
           </h2>
           <p className="mt-5 text-[rgba(232,228,220,0.78)]">
             Westerly is just taking flight in the Treasure Valley. Here&rsquo;s the work
-            I&rsquo;m built for — and the light I chase. Pilot reels available on request.
+            I&rsquo;m built for, and the light I chase. Pilot reels available on request.
           </p>
         </div>
 

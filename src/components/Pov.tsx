@@ -16,7 +16,7 @@ export function Pov() {
           ref={wipeRef}
           className="mask-wipe font-display text-[26px] font-medium leading-[1.25] text-[var(--fog)] sm:text-[32px] md:text-[44px]"
         >
-          A course, a club, a resort isn&rsquo;t selling a tee time — it&rsquo;s selling a feeling:{' '}
+          A course, a club, a resort isn&rsquo;t selling a tee time. It&rsquo;s selling a feeling:{' '}
           <span ref={brightenRef} className="brighten italic">
             this is where good days happen.
           </span>{' '}

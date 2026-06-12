@@ -237,16 +237,25 @@ select:focus-visible {
 
 /* Section transition bands */
 .section-fade-dark-to-light {
-  height: 80px;
+  height: 48px;
   background: linear-gradient(to bottom, var(--deep-slate), var(--sand-mist) 40%, var(--fog));
 }
 .section-fade-light-to-dark {
-  height: 80px;
+  height: 48px;
   background: linear-gradient(to bottom, var(--fog), var(--sand-mist) 60%, var(--deep-slate));
 }
 .section-fade-sand-to-light {
-  height: 56px;
+  height: 36px;
   background: linear-gradient(to bottom, var(--sand), var(--fog));
+}
+@media (min-width: 768px) {
+  .section-fade-dark-to-light,
+  .section-fade-light-to-dark {
+    height: 80px;
+  }
+  .section-fade-sand-to-light {
+    height: 56px;
+  }
 }
 
 /* Hero vignette */

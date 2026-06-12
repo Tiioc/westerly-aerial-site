@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/content'
+import { LogoMark } from './Logo'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -25,10 +26,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-5 md:px-10">
         <a href="#top" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <svg viewBox="0 0 28 28" className="h-6 w-6" aria-hidden="true">
-            <circle cx="14" cy="14" r="13" fill="none" stroke="var(--tide)" strokeWidth="1" />
-            <path d="M4 18 C 10 12, 18 22, 24 14" fill="none" stroke="var(--fog)" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
+          <LogoMark className="h-7 w-7" />
           <span className="font-display text-[15px] font-medium tracking-[0.02em] text-[var(--fog)]">
             Westerly Aerial Co.
           </span>

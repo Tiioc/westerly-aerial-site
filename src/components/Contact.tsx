@@ -29,7 +29,7 @@ function ContactForm() {
           Sent. Talk soon.
         </h3>
         <p className="mt-4 max-w-md text-[rgba(20,32,31,0.82)]">
-          Thanks — I&rsquo;ll be in touch within one business day.
+          Thanks. I&rsquo;ll be in touch within one business day.
         </p>
       </div>
     )
@@ -133,12 +133,24 @@ export function Contact() {
               </a>
             </p>
           </div>
-          <div className="mt-12 max-w-md border-t border-[rgba(232,228,220,0.15)] pt-8">
+          <div className="mt-10 flex items-center gap-4">
+            <img
+              src="/tyler-resturaunt-jpg.jpeg"
+              alt="Tyler Bunn"
+              className="h-14 w-14 rounded-full object-cover border-2 border-[rgba(201,184,154,0.4)]"
+            />
+            <p className="text-[15px] leading-snug text-[rgba(232,228,220,0.78)]">
+              Tyler Bunn<br />
+              <span className="text-[13px] text-[rgba(232,228,220,0.55)]">Founder, Westerly Aerial Co.</span>
+            </p>
+          </div>
+
+          <div className="mt-10 max-w-md border-t border-[rgba(232,228,220,0.15)] pt-8">
             <p className="eyebrow text-[var(--sunset)]">What happens next</p>
             <ol className="mt-5 space-y-4">
               {[
                 'You hear back within one business day.',
-                'A quick call to scope the shoot — light, angles, and the story your venue needs to tell.',
+                'A quick call to scope the shoot: light, angles, and the story your venue needs to tell.',
                 'Footage in your inbox within 48 hours of the flight, licensed and ready to post.',
               ].map((step, i) => (
                 <li key={i} className="flex gap-4 text-[15.5px] leading-relaxed text-[rgba(232,228,220,0.88)]">

@@ -33,7 +33,7 @@ export function EmailCapture() {
         </div>
         {status === 'success' ? (
           <p className="text-[15.5px] font-medium text-[var(--sunset)] md:w-[360px]">
-            You&rsquo;re on the list — talk soon.
+            You&rsquo;re on the list. Talk soon.
           </p>
         ) : (
           <form
@@ -71,7 +71,7 @@ export function EmailCapture() {
       </div>
       {status === 'error' && (
         <p role="alert" className="mx-auto mt-3 max-w-[1280px] text-[14px] text-[#e0a08a]">
-          Couldn&rsquo;t add you just now — please try again in a moment.
+          Couldn&rsquo;t add you just now. Please try again in a moment.
         </p>
       )}
     </section>
