@@ -34,12 +34,16 @@ export default function App() {
         <Pov />
         {/* Discovery Flight offer moved up — directly under the empathy line */}
         <DiscoveryCta />
+        <div className="section-fade-sand-to-light" aria-hidden="true" />
         <Services />
+        <div className="section-fade-light-to-dark" aria-hidden="true" />
         <FlightAccent />
         <WhatWeCapture />
         <About />
+        <div className="section-fade-dark-to-light" aria-hidden="true" />
         <Pricing />
         <FAQ />
+        <div className="section-fade-light-to-dark" aria-hidden="true" />
         <Contact />
         <EmailCapture />
       </main>

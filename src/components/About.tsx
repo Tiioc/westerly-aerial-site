@@ -111,17 +111,22 @@ export function About() {
             TO ADD THE REAL PHOTO: pass src to this slot (portrait, golden hour,
             Tyler on location with the drone). Layout won't shift. */}
         <div ref={photoRef} className="tile-rise md:sticky md:top-28">
-          <MediaSlot
-            id="founder"
-            // src="/tyler.jpg"   // ← drop the real founder photo here (put the file in /public)
-            // type="image"
-            alt="Tyler Bunn, Westerly Aerial founder, on location in the Treasure Valley."
-            aspect="4 / 5"
-            fallback={<FounderPortraitFallback />}
-            className="rounded-sm bg-[var(--deep-slate)]"
-          />
+          <div className="founder-frame overflow-hidden rounded-sm">
+            <MediaSlot
+              id="founder"
+              // src="/tyler.jpg"   // ← drop the real founder photo here (put the file in /public)
+              // type="image"
+              alt="Tyler Bunn, Westerly Aerial founder, on location in the Treasure Valley."
+              aspect="4 / 5"
+              fallback={<FounderPortraitFallback />}
+              className="bg-[var(--deep-slate)]"
+            />
+          </div>
           <p className="mt-3 text-[13px] uppercase tracking-[0.14em] text-[rgba(232,228,220,0.7)]">
             Tyler Bunn · Founder · Garden City, ID
+          </p>
+          <p className="mt-1 font-display text-[13px] italic text-[rgba(217,138,95,0.7)]">
+            Golden hour, Treasure Valley
           </p>
         </div>
       </div>

@@ -15,17 +15,20 @@ export function Pricing() {
 
         <div className="mt-14 grid gap-px bg-[rgba(201,184,154,0.6)] md:grid-cols-3">
           {PRICING.map((group) => (
-            <div key={group.category} className="bg-[var(--fog)] px-7 py-10 md:px-9 md:py-12">
+            <div key={group.category} className="pricing-col bg-[var(--fog)] px-7 py-10 md:px-9 md:py-12">
               <h3 className="font-display text-[22px] font-medium text-[var(--ink)] md:text-[24px]">
                 {group.category}
               </h3>
               <ul className="mt-7 space-y-4 border-t border-[var(--sand)] pt-6">
-                {group.items.map((item) => (
-                  <li key={item.name} className="flex items-baseline justify-between gap-3 text-[15px]">
-                    <span className="text-[var(--ink)]">{item.name}</span>
-                    <span className="font-display whitespace-nowrap text-[var(--tide-text)]">{item.price}</span>
-                  </li>
-                ))}
+                {group.items.map((item) => {
+                  const isFree = item.price.toLowerCase().includes('free')
+                  return (
+                    <li key={item.name} className={`flex items-baseline justify-between gap-3 text-[15px] ${isFree ? 'discovery-row' : ''}`}>
+                      <span className={isFree ? 'font-medium text-[#9c5530]' : 'text-[var(--ink)]'}>{item.name}</span>
+                      <span className={`font-display whitespace-nowrap ${isFree ? 'text-[var(--sunset)]' : 'text-[var(--tide-text)]'}`}>{item.price}</span>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           ))}

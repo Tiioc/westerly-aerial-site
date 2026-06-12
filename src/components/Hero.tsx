@@ -39,6 +39,9 @@ export function Hero() {
         />
       </div>
 
+      {/* Cinematic vignette */}
+      <div className="hero-vignette" />
+
       {/* Wind current signature — drifts gently, also parallaxes slightly */}
       <div
         className="pointer-events-none absolute inset-x-0 bottom-[18%] z-10 h-[200px]"
