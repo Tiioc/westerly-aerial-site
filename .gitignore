@@ -14,6 +14,12 @@ dist-ssr
 .parcel-cache
 .claude
 
+# Local-only working folders (backups, raw footage, brand exports, scratch)
+_raw-footage
+_originals
+_brand
+seo-agent
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

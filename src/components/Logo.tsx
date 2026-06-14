@@ -1,37 +1,41 @@
+// Westerly Aerial Co. — brand logo
+// Mark: a "W" formed from three converging flight paths, inside a compass/lens
+// ring, with a sunset wind-current arc ("Westerly" = the west wind) above it.
+// Colors come from CSS vars so the mark stays on-palette site-wide.
+
 export function LogoMark({ className = 'h-7 w-7' }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
-      {/* Outer ring — compass / lens feel */}
-      <circle cx="16" cy="16" r="15" fill="none" stroke="var(--tide)" strokeWidth="1.2" opacity="0.5" />
-
-      {/* Stylised W formed by three converging flight paths */}
+    <svg viewBox="0 0 100 100" className={className} fill="none" aria-hidden="true">
+      {/* compass / lens ring */}
+      <circle cx="50" cy="50" r="45" stroke="var(--tide)" strokeWidth="1.6" opacity="0.55" />
+      {/* west-wind current */}
+      <path d="M20 30 C 38 19 62 19 80 30" stroke="var(--sunset)" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="50" cy="23" r="3.4" fill="var(--sunset)" />
+      {/* W — three converging flight paths */}
       <path
-        d="M7 11 L11.5 22 L16 14 L20.5 22 L25 11"
-        fill="none"
+        d="M22 40 L36 70 L50 48 L64 70 L78 40"
         stroke="var(--fog)"
-        strokeWidth="2"
+        strokeWidth="6"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
-
-      {/* Wind current — a single flowing arc across the top */}
-      <path
-        d="M6 8.5 C 10 6, 14 10, 18 7.5 S 24 5, 27 7"
-        fill="none"
-        stroke="var(--sunset)"
-        strokeWidth="1.2"
-        strokeLinecap="round"
       />
     </svg>
   )
 }
 
+// Full horizontal lockup (Direction C): mark + wide-tracked uppercase wordmark.
+// Inherits DM Sans (the body font). Designed for dark surfaces (nav, footer).
 export function LogoFull({ className = '' }: { className?: string }) {
   return (
     <span className={`flex items-center gap-2.5 ${className}`}>
-      <LogoMark />
-      <span className="font-display text-[15px] font-medium tracking-[0.02em] text-[var(--fog)]">
-        Westerly Aerial Co.
+      <LogoMark className="h-7 w-7 shrink-0" />
+      <span className="flex flex-col leading-none">
+        <span className="text-[13px] font-medium uppercase tracking-[0.22em] text-[var(--fog)]">
+          Westerly
+        </span>
+        <span className="mt-[3px] text-[9px] font-medium uppercase tracking-[0.34em] text-[var(--sunset)]">
+          Aerial Co.
+        </span>
       </span>
     </span>
   )

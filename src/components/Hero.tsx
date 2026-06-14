@@ -28,6 +28,7 @@ export function Hero() {
         <MediaSlot
           id="hero"
           src="/hero-reel.mp4"
+          poster="/hero-poster.jpg"
           type="video"
           alt="Aerial flyover of an Idaho lake"
           fallback={<HeroFallback />}
