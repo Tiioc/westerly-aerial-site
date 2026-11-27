@@ -1,7 +1,10 @@
 # Westerly Aerial Co. — Website
 
-Marketing site for Westerly Aerial Co., an aerial photography & video studio in
-Garden City / Boise, Idaho. Built with **React 18 + TypeScript + Vite + Tailwind CSS**.
+Marketing site I built for Westerly Aerial Co., my aerial photo and video business in the Boise, Idaho area (June 2026).
+
+- **Stack:** React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui components
+- **Features:** video hero, services and pricing, FAQ, founder story, contact and email forms (Netlify Forms), SEO tags and sitemap, mobile call-to-action bar
+- **Public copy note:** the phone number in this copy is a placeholder.
 
 > **Just want to get it online?** You don't need this file. Follow **[LAUNCH.md](./LAUNCH.md)** —
 > it's written step-by-step for a non-developer (buy domain → deploy → email → forms → analytics).
